@@ -1,0 +1,359 @@
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+        }
+        
+        .main-container {
+            display: flex;
+            margin: 0 20%;
+        }
+        
+        .left-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+            width: 45%;
+            background-color: #072227;
+            color: white;
+        }
+        
+        .right-container {
+            height: 100vh;
+            width: 55%;
+        }
+        
+        .padded {
+            padding: 16px;
+        }
+        
+        h3 {
+            font-size: 24px;
+        }
+        
+        .personal-info {}
+        
+        .personal-info h1 {
+            margin: 0 0 16px;
+            font-size: 58px;
+        }
+        
+        .personal-info .sub-title {
+            font-size: 22px;
+        }
+        
+        .personal-info hr {
+            margin: 16px 0;
+            margin-right: 70%;
+        }
+        
+        .personal-info p {
+            margin: 8px 0;
+        }
+        
+        .personal-info a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .personal-info svg {
+            width: 48px;
+        }
+        
+        .email {
+            border-radius: 2px;
+            transition: 150ms ease-out;
+            padding: 4px 0;
+        }
+        
+        .email:hover {
+            color: #072227;
+            background-color: white;
+        }
+        
+        .skills {}
+        
+        .skills .progress {
+            font-size: 28px;
+            line-height: 28px;
+        }
+        
+        .skills .progress .blank {
+            font-size: 28px;
+            line-height: 28px;
+            color: rgba(255, 255, 255, 0.3);
+        }
+        
+        .skills .progress span {
+            transition: 150ms ease-out;
+        }
+        
+        .skills .progress .full:hover {
+            font-size: 30px;
+            line-height: 24px;
+        }
+        
+        .skill-names {
+            line-height: 28px;
+            font-size: 18px;
+        }
+        
+        .skills-container {
+            display: flex;
+        }
+        
+        .skills-container div {
+            width: 150px;
+        }
+        
+        .languages p {
+            font-size: 20px;
+            margin: 8px 0;
+        }
+        
+        .experience {}
+        
+        .experience a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #072227;
+        }
+        
+        .experience h3 {
+            margin: 0 0 16px;
+            color: #072227;
+        }
+        
+        .experience ul {
+            margin: 4px 0;
+        }
+        
+        .experience .company {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        
+        .experience .time-span {
+            font-size: 15px;
+            font-weight: 500;
+            float: right;
+            margin-top: 4px;
+            color: #072227;
+        }
+        
+        .experience .position {
+            font-size: 18px;
+        }
+        
+        .experience .description {
+            font-size: 16px;
+        }
+        
+        @media print {
+            .main-container {
+                margin: 0;
+            }
+            .personal-info hr {
+                margin-right: 40%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="left-container">
+            <div class="personal-info padded">
+                <h1> Guy<br />Dadon </h1>
+                <p class="sub-title">Software Developer</p>
+                <hr />
+                <p> Rishon Lezion, Israel </p>
+                <p>050-7534377</p>
+                <p>1992</p>
+                <a class="email" href="mailto:guydadon14@gmail.com">guydadon14@gmail.com</a>
+                <br />
+                <br />
+
+                <a href="https://papacheese.github.io/">
+                    <svg width="32" height="32" fill="white" viewBox="0 0 32 32" version="1.1" id="svg4" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                        <defs id="defs8" />
+                        <path
+                            d="M 16,0 C 7.164,0 0,7.164 0,16 0,24.836 7.164,32 16,32 24.835997,32 32,24.836 32,16 32,7.164 24.835997,0 16,0 Z m 1.333336,21.409333 v -4.076 h 3.992 c -0.07869,1.524 -0.282672,2.986667 -0.608,4.372 -1.097333,-0.16 -2.232,-0.250666 -3.384,-0.296 z M 19.942668,24.292 c -0.665332,1.773333 -1.545332,3.329333 -2.609332,4.608 v -4.826667 c 0.888,0.03733 1.758661,0.108 2.609332,0.218667 z m -2.609332,-9.625333 v -4.02 c 1.157328,-0.04533 2.294667,-0.137334 3.397328,-0.298667 0.317336,1.369333 0.518668,2.814667 0.594672,4.318667 z m 0,-6.6853337 V 3.1 c 1.074664,1.292 1.961332,2.8666667 2.627996,4.6613333 -0.856,0.112 -1.733335,0.1826667 -2.627996,0.22 z m 3.603996,-4.356 c 1.649332,0.6613334 3.138665,1.6373334 4.386665,2.8613334 C 24.467997,6.7986667 23.576,7.076 22.632,7.296 22.173336,5.9733333 21.598668,4.7493333 20.937332,3.6253333 Z M 11.282666,21.705333 c -0.325332,-1.385333 -0.530666,-2.848 -0.608,-4.372 h 3.991998 v 4.076 c -1.153332,0.04533 -2.28533,0.136 -3.383998,0.296 z m 3.383998,2.368 V 28.9 c -1.064,-1.278667 -1.943998,-2.834667 -2.60933,-4.608 0.850666,-0.110667 1.72133,-0.181333 2.60933,-0.218667 z m -3.991998,-9.406666 c 0.076,-1.504 0.276,-2.949334 0.594668,-4.318667 1.102666,0.161333 2.240002,0.253333 3.39733,0.298667 v 4.02 z M 12.04,7.7613333 C 12.706666,5.9666667 13.593332,4.392 14.666664,3.1 V 7.9813333 C 13.772003,7.944 12.894666,7.8733333 12.04,7.7613333 Z M 9.3666664,7.2946667 c -0.944,-0.22 -1.836,-0.4973334 -2.6906664,-0.8093334 1.2493336,-1.224 2.7373336,-2.2 4.386666,-2.8613333 C 10.401334,4.7493333 9.8266664,5.9733333 9.3666664,7.2946667 Z M 8.6346664,9.852 c -0.352,1.534667 -0.5786664,3.146667 -0.656,4.814667 h -5.244 C 2.9546664,12.456 3.72,10.404 4.8906664,8.6426667 6.064,9.124 7.312,9.536 8.6346664,9.852 Z m 0.012013,12.349333 c -1.3173333,0.314667 -2.56,0.722667 -3.7293333,1.2 C 3.7306664,21.630667 2.956,19.562667 2.7346664,17.333333 H 7.98 c 0.077336,1.686667 0.308,3.317334 0.6666664,4.868 z m 0.73733,2.556 c 0.456,1.301334 1.0240006,2.508 1.6760006,3.616 -1.6306734,-0.653333 -3.1013404,-1.614666 -4.3413404,-2.82 0.848,-0.305333 1.732,-0.58 2.6653334,-0.796 z m 13.2319996,0 c 0.933334,0.217334 1.815999,0.489334 2.665331,0.796 -1.241331,1.204 -2.712,2.166667 -4.342665,2.821334 0.652001,-1.109334 1.220002,-2.316 1.677334,-3.617334 z m 0.737332,-2.556 c 0.359991,-1.550666 0.589327,-3.181333 0.667995,-4.868 h 5.245328 c -0.222661,2.229334 -0.997328,4.297334 -2.184,6.068 -1.169332,-0.477333 -2.413328,-0.885333 -3.729332,-1.2 z m 0.667995,-7.534666 c -0.07734,-1.668 -0.305339,-3.28 -0.656,-4.814667 C 24.688,9.536 25.937332,9.124 27.110668,8.6426667 28.28,10.404 29.045336,12.456 29.265332,14.666667 Z"
+                            id="path2" style="stroke-width:1.33333" />
+                    </svg>
+                </a>
+
+                <a href="https://www.linkedin.com/in/guy-dadon-024244167/">
+                    <svg width="32" height="32" fill="white" viewBox="0 0 32 32" version="1.1" id="svg4" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                        <defs id="defs8" />
+                        <path
+                            d="M 25.333333,0 H 6.6666667 C 2.9853333,0 0,2.9853333 0,6.6666667 V 25.333333 C 0,29.014667 2.9853333,32 6.6666667,32 H 25.333333 C 29.016,32 32,29.014667 32,25.333333 V 6.6666667 C 32,2.9853333 29.016,0 25.333333,0 Z M 10.666667,25.333333 H 6.6666667 V 10.666667 H 10.666667 Z M 8.6666667,8.976 c -1.288,0 -2.3333334,-1.0533333 -2.3333334,-2.352 0,-1.2986667 1.0453334,-2.352 2.3333334,-2.352 C 9.9546667,4.272 11,5.3253333 11,6.624 11,7.9226667 9.956,8.976 8.6666667,8.976 Z M 26.666667,25.333333 h -4 v -7.472 c 0,-4.490666 -5.333334,-4.150666 -5.333334,0 v 7.472 h -4 V 10.666667 h 4 V 13.02 c 1.861334,-3.448 9.333334,-3.7026667 9.333334,3.301333 z"
+                            id="path2" style="stroke-width:1.33333" />
+                    </svg>
+                </a>
+
+                <a href="https://github.com/PapaCheese">
+                    <svg width="32" height="32" fill="white" viewBox="0 0 32 32" version="1.1" id="svg4" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                        <defs id="defs8" />
+                        <path
+                            d="M 16,0 C 7.1653333,0 0,7.3451082 0,16.404485 0,23.652533 4.584,29.801481 10.942667,31.970974 11.741333,32.122716 12,31.614177 12,31.182192 V 28.128224 C 7.5493333,29.120695 6.6226667,26.192494 6.6226667,26.192494 5.8946667,24.296409 4.8453333,23.791971 4.8453333,23.791971 3.3933333,22.773526 4.956,22.795399 4.956,22.795399 c 1.6066667,0.114831 2.452,1.691029 2.452,1.691029 1.4266667,2.507152 3.742667,1.782621 4.656,1.362939 0.142667,-1.059456 0.557333,-1.783987 1.016,-2.192733 -3.5533333,-0.416947 -7.2893333,-1.823631 -7.2893333,-8.107916 0,-1.79219 0.6253333,-3.254923 1.648,-4.403237 -0.1653334,-0.414214 -0.7133334,-2.0833701 0.156,-4.3417208 0,0 1.344,-0.440187 4.4013333,1.6814597 C 13.272,8.1215871 14.64,7.9397708 16,7.9329356 c 1.36,0.00684 2.729333,0.1886515 4.008,0.5522843 3.054667,-2.1216467 4.396,-1.6814597 4.396,-1.6814597 0.870667,2.2597178 0.322667,3.9288738 0.157333,4.3417208 1.026667,1.148314 1.646667,2.612414 1.646667,4.403237 0,6.300689 -3.742667,7.688235 -7.305333,8.094246 C 19.476,24.151503 20,25.149443 20,26.680528 v 4.501664 c 0,0.436086 0.256,0.948726 1.068,0.787415 C 27.421333,29.79738 32,23.649799 32,16.404485 32,7.3451082 24.836,0 16,0 Z"
+                            id="path2" style="stroke-width:1.35008" />
+                    </svg>
+                </a>
+
+
+
+            </div>
+
+            <div>
+                <div>
+                    <div class="skills padded">
+                        <h3>SKILLS</h3>
+                        <div class="skills-container">
+                            <div class="skill-names">
+                                Node Js / Ts
+                                <br /> Java
+                                <br /> C#
+                                <br /> Python
+                                <br /> HTML / CSS
+                                <br /> React
+                                <br /> Angular
+                                <br /> Godot
+                                <br /> Unity
+                                <br /> Android Studio
+                            </div>
+                            <div class="progress">
+                                <span class="full">●●●●●●●</span><span class="blank">●●●</span>
+                                <span class="full">●●●●●●●</span><span class="blank">●●●</span>
+                                <span class="full">●●●●●●</span><span class="blank">●●●●</span>
+                                <span class="full">●●●●●●●●</span><span class="blank">●●</span>
+                                <span class="full">●●●●●●●●</span><span class="blank">●●</span>
+                                <span class="full">●●●●●●●</span><span class="blank">●●●</span>
+                                <span class="full">●●●●●●</span><span class="blank">●●●●</span>
+                                <span class="full">●●●●●●●●●</span><span class="blank">●</span>
+                                <span class="full">●●●●●●●</span><span class="blank">●●●</span>
+                                <span class="full">●●●●●●</span><span class="blank">●●●●</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="languages padded">
+                    <h3>LANGUAGES</h3>
+                    <p>Hebrew - Native</p>
+                    <p>English - Fluent</p>
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="experience padded">
+                <h3>EXPERIENCE</h3>
+
+                <div>
+                    <div class="company">BugSec <span class="time-span">2021 - Now</span></div>
+                    <div class="position">Full Stack Developer</div>
+                    <div class="description">
+                        <ul>
+                            <li>
+                                Creating a Full Stack Application for handling most of the team's workflow, built with NodeTS & React:
+                            </li>
+                            <li>
+                                Live employee performance charts.
+                            </li>
+                            <li>
+                                24/7 Shift management.
+                            </li>
+                            <li>
+                                Heavy MySql management.
+                            </li>
+                            <li>
+                                SAML (Azure AD SSO) login & JWT.
+                            </li>
+                        </ul>
+
+                    </div>
+                    <br />
+                    <div class="position">Automation Developer</div>
+                    <div class="description">
+                        <ul>
+                            <li>
+                                In charge of creating Python Automation scripts for integrating various firewalls and end points APIs with Jira for the main work flow of the company's SOC team.
+                            </li>
+                            <li>
+                                Designing & Automating monthly reports for customers.
+                            </li>
+                            <li>
+                                All manageable from the web app.
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <br/>
+                <div>
+                    <div class="company">Game Developer </div>
+                    <div class="position">Freelancer<span class="time-span">2019 - 2021</span></div>
+                    <div class="description">
+                        <ul>
+                            <li>
+                                Creating Over 30 video games for Fiverr clients with mostly perfect Reviews using Godot And Unity, for PC and mobile. I've learned:
+                            </li>
+                            <li>
+                                How to design a game alongside a client
+                            </li>
+                            <li>
+                                How to work through any problem.
+                            </li>
+                            <li>
+                                Monetization integration.
+                            </li>
+                            <li>
+                                SAML (Azure AD SSO) login & JWT.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <br/>
+
+                    <div class="position">Personal Projects<span class="time-span">2019 - Now</span></div>
+                    <div class="description">
+                        <a href="https://www.youtube.com/watch?v=jJcqJ_2C-BI&ab_channel=LazyGemsGames">Bullet Express</a> is a personal project I've been working on since early 2019
+                    </div>
+                </div>
+                <br/>
+                <span style="font-weight: 600;">Experience with UI, Animation, Shaders.</span>
+                <br/>
+                <br/>
+                <br/>
+
+                <div>
+                    <h3>EDUCATION</h3>
+                    <div>
+                        <div class="company">John Bryce, Full Stack Course<span class="time-span">2018 - 2019</span></div>
+                        <div class="position">354 Hours, Jerusalem</div>
+                        <div class="description">
+                            Course Final Project - Grade 97
+                            <ul>
+                                <li>
+                                    Full Stack web application.
+                                </li>
+                                <li>
+                                    made with Java, MySql & Angular
+                                </li>
+                            </ul>
+                        </div>
+                        <br/>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
