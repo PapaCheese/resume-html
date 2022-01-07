@@ -2,10 +2,17 @@
 
 <head>
     <style>
+         :root {
+            background: white;
+            --primary: #1A374D;
+        }
+        
+        * {
+            font-family: 'Open Sans', sans-serif;
+        }
+        
         body {
-            font-family: 'Roboto', sans-serif;
             margin: 0;
-            background-color: white;
         }
         
         .main-container {
@@ -18,13 +25,13 @@
             justify-content: space-between;
             height: 100vh;
             width: 45%;
-            background-color: #072227;
+            background-color: var(--primary);
             color: white;
         }
         
         .right-container {
             height: 100vh;
-            width: 55%;
+            width: 50%;
         }
         
         .padded {
@@ -72,30 +79,19 @@
         }
         
         .email:hover {
-            color: #072227;
+            color: var(--primary);
             background-color: white;
         }
         
         .skills {}
         
         .skills .progress {
-            font-size: 28px;
+            font-size: 26px;
             line-height: 28px;
         }
         
         .skills .progress .blank {
-            font-size: 28px;
-            line-height: 28px;
             color: rgba(255, 255, 255, 0.3);
-        }
-        
-        .skills .progress span {
-            transition: 150ms ease-out;
-        }
-        
-        .skills .progress .full:hover {
-            font-size: 30px;
-            line-height: 24px;
         }
         
         .skill-names {
@@ -116,17 +112,31 @@
             margin: 8px 0;
         }
         
+        .time-line {
+            width: 88px;
+            min-width: 88px;
+        }
+        
+        .time-line span {
+            font-size: 14px;
+            font-weight: 600;
+            float: left;
+            margin-top: 4px;
+            margin-left: 8px;
+        }
+        
         .experience {}
         
         .experience a {
             text-decoration: none;
             font-weight: 600;
-            color: #072227;
+            color: var(--primary);
         }
         
         .experience h3 {
+            font-size: 22px;
             margin: 0 0 16px;
-            color: #072227;
+            color: var(--primary);
         }
         
         .experience ul {
@@ -134,26 +144,21 @@
         }
         
         .experience .company {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 600;
         }
         
-        .experience .time-span {
-            font-size: 15px;
-            font-weight: 500;
-            float: right;
-            margin-top: 4px;
-            color: #072227;
-        }
-        
         .experience .position {
-            font-size: 18px;
+            font-size: 16px;
         }
         
         .experience .description {
-            font-size: 16px;
+            font-size: 14px;
         }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -240,12 +245,22 @@
                 </div>
             </div>
         </div>
+        <div class="time-line">
+            <span style="margin-top: 64px;">2021 - Now</span>
+            <br/>
+            <span style="margin-top: 376px;">2019 - 2021</span>
+            <br/>
+            <span style="margin-top: 208px;">2019 - Now</span>
+            <br/>
+            <span style="margin-top: 156px;">2018 - 2019</span>
+
+        </div>
         <div class="right-container">
             <div class="experience padded">
                 <h3>EXPERIENCE</h3>
 
                 <div>
-                    <div class="company">BugSec <span class="time-span">2021 - Now</span></div>
+                    <div class="company">BugSec</div>
                     <div class="position">Full Stack Developer</div>
                     <div class="description">
                         <ul>
@@ -288,7 +303,7 @@
                 <br/>
                 <div>
                     <div class="company">Game Developer </div>
-                    <div class="position">Freelancer<span class="time-span">2019 - 2021</span></div>
+                    <div class="position">Freelancer</div>
                     <div class="description">
                         <ul>
                             <li>
@@ -311,7 +326,7 @@
 
                     <br/>
 
-                    <div class="position">Personal Projects<span class="time-span">2019 - Now</span></div>
+                    <div class="position">Personal Projects</div>
                     <div class="description">
                         <a href="https://www.youtube.com/watch?v=jJcqJ_2C-BI&ab_channel=LazyGemsGames">Bullet Express</a> is a personal project I've been working on since early 2019
                     </div>
@@ -320,12 +335,11 @@
                 <span style="font-weight: 600;">Experience with UI, Animation, Shaders.</span>
                 <br/>
                 <br/>
-                <br/>
 
                 <div>
                     <h3>EDUCATION</h3>
                     <div>
-                        <div class="company">John Bryce, Full Stack Course<span class="time-span">2018 - 2019</span></div>
+                        <div class="company">John Bryce, Full Stack Course</div>
                         <div class="position">354 Hours, Jerusalem</div>
                         <div class="description">
                             Course Final Project - Grade 97
@@ -341,7 +355,6 @@
                         <br/>
                     </div>
                 </div>
-                <br/>
                 <div>
                     <h3>HOBBIES</h3>
                     Guitar playing & Music composition.
