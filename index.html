@@ -34,6 +34,14 @@
             width: 50%;
         }
         
+        .right-container h3 {
+            color: var(--primary);
+        }
+        
+        .right-container td {
+            vertical-align: top;
+        }
+        
         .padded {
             padding: 32px;
         }
@@ -88,8 +96,6 @@
             background-color: white;
         }
         
-        .skills {}
-        
         .skills .progress {
             font-size: 22px;
             line-height: 28px;
@@ -119,19 +125,21 @@
         }
         
         .time-line {
-            width: 90px;
-            min-width: 90px;
+            padding-top: 4px;
         }
         
         .time-line span {
+            white-space: nowrap;
             font-size: 14px;
             font-weight: 600;
-            float: right;
-            margin: 0;
-            margin-top: 4px;
+            margin-right: 16px;
         }
         
-        .experience {}
+        .experience.padded {
+            padding-left: 16px;
+            padding-right: 0;
+            padding-bottom: 0;
+        }
         
         .experience a {
             text-decoration: none;
@@ -142,7 +150,6 @@
         .experience h3 {
             font-size: 22px;
             margin: 0 0 16px;
-            color: var(--primary);
         }
         
         .experience ul {
@@ -156,10 +163,11 @@
         
         .experience .position {
             font-size: 16px;
+            font-weight: 500;
         }
         
         .experience .description {
-            font-size: 14px;
+            font-size: 15px;
             line-height: 18px;
         }
     </style>
@@ -252,120 +260,146 @@
                 </div>
             </div>
         </div>
-        <div class="time-line">
-            <span style="margin-top: 80px;">2021 - Now</span>
-            <br/>
-            <span style="margin-top: 402px;">2019 - 2021</span>
-            <br/>
-            <span style="margin-top: 176px;">2019 - Now</span>
-            <br/>
-            <span style="margin-top: 176px;">2018 - 2019</span>
 
-        </div>
         <div class="right-container">
             <div class="experience padded">
-                <h3>EXPERIENCE</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <h3>EXPERIENCE</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time-line"><span>2021 - Now</span></td>
+                            <td>
+                                <div>
+                                    <div class="company">BugSec</div>
+                                    <div class="position">Full Stack Developer</div>
+                                    <div class="description">
+                                        <ul>
+                                            <li>
+                                                Creating a Full Stack Application for handling most of the team's workflow, built with NodeTS & React:
+                                            </li>
+                                            <li>
+                                                Live employee performance charts.
+                                            </li>
+                                            <li>
+                                                24/7 Shift management.
+                                            </li>
+                                            <li>
+                                                Heavy MySql management.
+                                            </li>
+                                            <li>
+                                                SAML (Azure AD SSO) login & JWT.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
 
-                <div>
-                    <div class="company">BugSec</div>
-                    <div class="position">Full Stack Developer</div>
-                    <div class="description">
-                        <ul>
-                            <li>
-                                Creating a Full Stack Application for handling most of the team's workflow, built with NodeTS & React:
-                            </li>
-                            <li>
-                                Live employee performance charts.
-                            </li>
-                            <li>
-                                24/7 Shift management.
-                            </li>
-                            <li>
-                                Heavy MySql management.
-                            </li>
-                            <li>
-                                SAML (Azure AD SSO) login & JWT.
-                            </li>
-                        </ul>
 
-                    </div>
-                    <br />
-                    <div class="position">Automation Developer</div>
-                    <div class="description">
-                        <ul>
-                            <li>
-                                In charge of creating Python Automation scripts for integrating various firewalls and end points APIs with Jira for the main work flow of the company's SOC team.
-                            </li>
-                            <li>
-                                Designing & Automating monthly reports for customers.
-                            </li>
-                            <li>
-                                All manageable from the web app.
-                            </li>
-                        </ul>
-                    </div>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <div>
+                                    <div class="position">Automation Developer</div>
+                                    <div class="description">
+                                        <ul>
+                                            <li>
+                                                In charge of creating Python Automation scripts for integrating various firewalls and end points APIs with Jira for the main work flow of the company's SOC team.
+                                            </li>
+                                            <li>
+                                                Designing & Automating monthly reports for customers.
+                                            </li>
+                                            <li>
+                                                All manageable from the web app.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
 
-                </div>
+                        <tr>
+                            <td class="time-line"><span>2019 - 2021</span></td>
+                            <td>
+                                <div>
+                                    <div class="company">Game Developer </div>
+                                    <div class="position">Freelancer</div>
+                                    <div class="description">
+                                        <ul>
+                                            <li>
+                                                Creating Over 30 video games for Fiverr clients with mostly perfect Reviews using Godot And Unity, for PC and mobile. I've learned:
+                                            </li>
+                                            <li>
+                                                How to design a game alongside a client
+                                            </li>
+                                            <li>
+                                                How to work through any problem.
+                                            </li>
+                                            <li>
+                                                Monetization integration.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
 
-                <br/>
-                <div>
-                    <div class="company">Game Developer </div>
-                    <div class="position">Freelancer</div>
-                    <div class="description">
-                        <ul>
-                            <li>
-                                Creating Over 30 video games for Fiverr clients with mostly perfect Reviews using Godot And Unity, for PC and mobile. I've learned:
-                            </li>
-                            <li>
-                                How to design a game alongside a client
-                            </li>
-                            <li>
-                                How to work through any problem.
-                            </li>
-                            <li>
-                                Monetization integration.
-                            </li>
-                            <li>
-                                SAML (Azure AD SSO) login & JWT.
-                            </li>
-                        </ul>
-                    </div>
 
-                    <br/>
+                        <tr>
+                            <td class="time-line"><span>2019 - Now</span></td>
+                            <td>
+                                <div>
+                                    <div class="position">Personal Projects</div>
+                                    <div class="description">
+                                        <a href="https://www.youtube.com/watch?v=jJcqJ_2C-BI&ab_channel=LazyGemsGames">Bullet Express</a> is a personal project I've been working on since early 2019
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
 
-                    <div class="position">Personal Projects</div>
-                    <div class="description">
-                        <a href="https://www.youtube.com/watch?v=jJcqJ_2C-BI&ab_channel=LazyGemsGames">Bullet Express</a> is a personal project I've been working on since early 2019
-                    </div>
-                </div>
-                <br/>
-                <span style="font-weight: 600;">Experience with UI, Animation, Shaders.</span>
-                <br/>
-                <br/>
 
-                <div>
-                    <h3>EDUCATION</h3>
-                    <div>
-                        <div class="company">John Bryce, Full Stack Course</div>
-                        <div class="position">354 Hours, Jerusalem</div>
-                        <div class="description">
-                            Course Final Project - Grade 97
-                            <ul>
-                                <li>
-                                    Full Stack web application.
-                                </li>
-                                <li>
-                                    made with Java, MySql & Angular
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div>
-                    <h3>HOBBIES</h3>
-                    Guitar playing & Music composition.
-                    <br/> Gaming
-                </div> -->
+                        <tr>
+                            <td></td>
+                            <td>
+                                <div style="margin-top: 8px;">
+                                    <span style="font-weight: 600; ">Experience with UI, Animation, Shaders.</span>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td>
+                                <h3 style="margin-top: 16px;">EDUCATION</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="time-line"><span>2021 - Now</span></td>
+                            <td>
+                                <div>
+                                    <div class="company">John Bryce, Full Stack Course</div>
+                                    <div class="position">354 Hours, Jerusalem</div>
+                                    <div class="description">
+                                        Course Final Project - Grade 97
+                                        <ul>
+                                            <li>
+                                                Full Stack web application.
+                                            </li>
+                                            <li>
+                                                made with Java, MySql & Angular
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
