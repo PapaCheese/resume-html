@@ -23,7 +23,6 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            height: 100vh;
             width: 42%;
             background-color: var(--primary);
             color: white;
@@ -88,7 +87,6 @@
         .email {
             border-radius: 2px;
             transition: 150ms ease-out;
-            padding: 4px 0;
         }
         
         .email:hover {
@@ -170,6 +168,11 @@
             font-size: 15px;
             line-height: 18px;
         }
+        
+        .small-line-hight p,
+        .small-line-hight a {
+            line-height: 16px;
+        }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -183,10 +186,13 @@
                 <h1> Guy<br /> <span class="last-name"> Dadon </span> </h1>
                 <p class="sub-title">Software Developer</p>
                 <hr />
-                <p> Rishon Lezion, Israel </p>
-                <p>050-7534377</p>
-                <p>1992</p>
-                <a class="email" href="mailto:guydadon14@gmail.com">guydadon14@gmail.com</a>
+                <div class="small-line-hight">
+                    <p>Rishon Lezion, Israel</p>
+                    <p>050-7534377</p>
+                    <p>1992</p>
+                    <a class="email" href="mailto:guydadon14@gmail.com">guydadon14@gmail.com</a>
+                </div>
+
                 <br />
                 <br />
 
